@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-15T12:30:30 IST" name="ParallelTests" finished-at="2025-02-15T12:31:50 IST" duration-ms="79398">
+    <groups>
+    </groups>
+    <test started-at="2025-02-15T12:30:30 IST" name="ChromeTest" finished-at="2025-02-15T12:30:43 IST" duration-ms="13309">
+      <class name="MultiBrowsers.SimpleFormDemoTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:MultiBrowsers.SimpleFormDemoTest@6ed3ccb2]" started-at="2025-02-15T12:30:30 IST" name="setUp" finished-at="2025-02-15T12:30:39 IST" duration-ms="8736" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="inputForm()[pri:0, instance:MultiBrowsers.SimpleFormDemoTest@6ed3ccb2]" started-at="2025-02-15T12:30:39 IST" name="inputForm" finished-at="2025-02-15T12:30:42 IST" duration-ms="3125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:MultiBrowsers.SimpleFormDemoTest@6ed3ccb2]" started-at="2025-02-15T12:30:42 IST" name="tearDown" finished-at="2025-02-15T12:30:43 IST" duration-ms="1386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- MultiBrowsers.SimpleFormDemoTest -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2025-02-15T12:30:30 IST" name="EdgeTest" finished-at="2025-02-15T12:31:14 IST" duration-ms="43938">
+      <class name="MultiBrowsers.InputFormSubmitTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:MultiBrowsers.InputFormSubmitTest@305b7c14]" started-at="2025-02-15T12:30:30 IST" name="setUp" finished-at="2025-02-15T12:31:02 IST" duration-ms="31489" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SimpleForm()[pri:0, instance:MultiBrowsers.InputFormSubmitTest@305b7c14]" started-at="2025-02-15T12:31:02 IST" name="SimpleForm" finished-at="2025-02-15T12:31:13 IST" duration-ms="10959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SimpleForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:MultiBrowsers.InputFormSubmitTest@305b7c14]" started-at="2025-02-15T12:31:13 IST" name="tearDown" finished-at="2025-02-15T12:31:14 IST" duration-ms="1471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- MultiBrowsers.InputFormSubmitTest -->
+    </test> <!-- EdgeTest -->
+    <test started-at="2025-02-15T12:30:30 IST" name="FirefoxTest" finished-at="2025-02-15T12:31:50 IST" duration-ms="79398">
+      <class name="MultiBrowsers.DragAndDropSlidersTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:MultiBrowsers.DragAndDropSlidersTest@2de23121]" started-at="2025-02-15T12:30:30 IST" name="setUp" finished-at="2025-02-15T12:30:43 IST" duration-ms="12461" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="dragAndDrop()[pri:0, instance:MultiBrowsers.DragAndDropSlidersTest@2de23121]" started-at="2025-02-15T12:30:43 IST" name="dragAndDrop" finished-at="2025-02-15T12:31:47 IST" duration-ms="64659" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The slider value did not update to 95 expected [94] but found [95]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The slider value did not update to 95 expected [94] but found [95]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at MultiBrowsers.DragAndDropSlidersTest.dragAndDrop(DragAndDropSlidersTest.java:97)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDrop -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:MultiBrowsers.DragAndDropSlidersTest@2de23121]" started-at="2025-02-15T12:31:47 IST" name="tearDown" finished-at="2025-02-15T12:31:50 IST" duration-ms="2223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- MultiBrowsers.DragAndDropSlidersTest -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- ParallelTests -->
+</testng-results>

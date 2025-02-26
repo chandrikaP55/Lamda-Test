@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [ParallelTests]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="MultiBrowsers.DragAndDropSlidersTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="dragAndDrop"/>
+        </methods>
+      </class> <!-- MultiBrowsers.DragAndDropSlidersTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [ParallelTests] -->
